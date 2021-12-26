@@ -3,8 +3,17 @@
 <!-- inside css -->
 <style type="text/css">
 h1{color:blue; font-family:comic sans ms;}
-h3{color:purple; font-family:verdana;}
+h2{color:green;}/* name selector */
+h3{color:purple; font-family:verdana; text-decoration:underline;}
 
+b, i{color:red;} /* b for bold, i for italic */
+
+p b{background-color:pink;} /* here if inside paragraph bolded text color will only change not all */
+
+.style1{color:green; font-family:verdana;} /* here is class used for css */
+.style2{color:red; font-family:monotype corsiva;}
+
+#mydiv{height:100px; width:400px; background-color:yellow; padding:20px;} /* here is id used for css */
 p.border1{border:10px solid; border-color:#009900;} /* green */
 
 p.border2{border:10px solid; border-bottom-color:#009900; /* Green */ 
@@ -268,8 +277,27 @@ This text have shadow
 <td width="40%">100</td>
 </tr>
 </table>
+<br />
+<h3> 11) All About Selector</h3><hr />
 
+<dl type="circle">
+<dt>name selector</dt><dd>here we can use direct tags name for css</dd>
+<dt>class selector</dt><dd>here we are using ".(dot)" for css it will change many block where this class used.</dd>
+<dt>id selector</dt><dd>here we are using "#" for css it's for single block.</dd>
+<dt>Universal selector</dt><dd>this will use for whole page css</dd>
+</dl>
+<h1>welcome to learn css</h1>
+<h2>simle and easy</h2>
+<h3>start learn css</h3>
+<b>This is bold</b><br />
+<i>This is italic</i>
+<p>This is a sample paragraph with a <b>highlighted bold color</b>text.</p>
 
+<p class="style1">This is sample paragraph</p>
+<p class="style2">This is another sample of paragraph</p>
 
+<div id="mydiv">
+<p>This is a sample paragraph.<br /> This is a sample paragraph. <br />This is a sample paragraph</p>
+</div>
 </body>
 </html>
