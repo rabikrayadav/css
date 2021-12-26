@@ -16,6 +16,13 @@ a:visited{color:gray}
 a:hover{color:pink; text-decoration:underline;}
 a:active{color:green}
 
+table.one{border-collapse:collapse;}
+table.two{border-collapse:seprate;}
+td.a{border-style:dotted; border-width:3px; border-color:rgb(0,0,0); padding:10px;}
+td.b{border-style:solid; border-width:3px; border-color:#0f0; padding:10px;}
+
+table.auto{table-layout:auto}
+table.fixed{table-layout:fixed}
 
 </style>
 
@@ -221,8 +228,46 @@ This WILL BE In Lowercase
 This text have shadow
 </p>
 
+<h3>10) all about table</h3><hr />
+<!-- it's some css tag are used inside head -->
 
-
+<table class="one">
+<caption>Collapse border example</caption>
+<tr>
+<td class="a">Cell A collapse example</td>
+</tr>
+<tr>
+<td class="b">Cell B collapse example</td>
+</tr>
+</table>
+<br /><br />
+<table class="two">
+<caption>Separate border example</caption>
+<tr>
+<td class="a">Cell A Separate example</td>
+</tr>
+<tr>
+<td class="b">Cell B Separate example</td>
+</tr>
+</table>
+<br /><br />
+<table class="auto" border="1" width="100%">
+<caption>Auto Layout</caption>
+<tr>
+<td width="20%">1000000000000000000000000000000000000000000000000000</td>
+<td width="40%">100000000000</td>
+<td width="40%">100</td>
+</tr>
+</table>
+<br /><br />
+<table class="fixed" border="1" width="100%">
+<caption>Fixed layout</caption>
+<tr>
+<td width="20%">1000000000000000000000000000000000000000000000000000</td>
+<td width="40%">100000000000</td>
+<td width="40%">100</td>
+</tr>
+</table>
 
 
 
